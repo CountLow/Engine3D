@@ -16,7 +16,6 @@ public class Renderer extends Canvas {
         points[1] = new Vector2(300,100);
         points[2] = new Vector2(100,300);
         points[3] = new Vector2(300,300);
-        repaint();
     }
 
     public void paint(Graphics g) {
@@ -24,6 +23,9 @@ public class Renderer extends Canvas {
     }
 
     public void render(Graphics g, Vector2[] points) {
+        g.setColor(Color.BLACK);
+
+
         for(Vector2 p1 : points) {
             for(Vector2 p2 : points) {
                 if (p1 == p2) continue;

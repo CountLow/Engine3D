@@ -14,7 +14,7 @@ public class Vector2 {
         this.x = x;
         this.y = y;
         magnitude = this.magnitude();
-        normalized = (x == 1) && (y == 1) ? this : this.normalize();
+        // normalized = (x == 1) && (y == 1) ? this : this.normalize();
     }
 
     public static Vector2 add(Vector2 v1, Vector2 v2) {

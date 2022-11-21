@@ -8,7 +8,7 @@ public class Camera {
 
     }
 
-    public void render() {
+    public Vector2 worldToScreenPoint(Vector3 worldPoint) {
 
     }
 }
